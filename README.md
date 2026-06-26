@@ -4,6 +4,12 @@ A modern movie discovery web application built with **React** and **Vite** that 
 
 ---
 
+## 🌐 Live Demo
+
+👉 **[View Live Demo](https://movie-discover-app-4ru5.vercel.app/)**
+
+---
+
 ## 🚀 Features
 
 - 🔍 Search for movies by title
