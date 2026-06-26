@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { useDebounce } from 'react-use';
 import Search from './components/search';
 import Spinner from './components/spinner';
 import MovieCard from './components/movieCard';
@@ -26,9 +25,13 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
 
-  useDebounce(() => {
+  useEffect(() => {
+  const timeoutId = setTimeout(() => {
     setDebouncedSearchTerm(searchTerm);
-  }, 500, [searchTerm]);
+  }, 500);
+
+  return () => clearTimeout(timeoutId);
+    }, [searchTerm]);
 
   const fetchMovies = async (query = '') => {
     setIsLoading(true);
