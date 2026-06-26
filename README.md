@@ -6,7 +6,7 @@ A modern movie discovery web application built with **React** and **Vite** that 
 
 ## 🌐 Live Demo
 
-👉 **[View Live Demo](https://movie-discover-app-4ru5.vercel.app/)**
+👉 **[View Live Demo](https://gurleen-movie-discover.vercel.app/)**
 
 ---
 
